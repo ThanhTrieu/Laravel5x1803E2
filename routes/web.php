@@ -56,4 +56,51 @@ Route::get('smartphone/{iphone?}',function($phone = null){
     return "This is smart {$phone}";
 });
 
+Route::get('product/sam-sung/{version}/{money}',function($version, $money){
+    return " samsung : {$version} - {$money}";
+})->where(['version'=>'[A-Za-z0-9].+','money'=>'\d+']);
+
+Route::get('product/detail/{id}',function($id){
+    return "This is {$id}";
+});
+
+Route::get('user/detail/{id}',function($id){
+    return "This is {$id}";
+});
+
+Route::get('login',function(){
+    return redirect()->route('myhome');
+});
+
+Route::get('home',function(){
+    return view('home');
+})->name('myhome');
+
+route::get('home/user',function(){
+    return "This is user - home";
+})->name('home.user');
+
+route::get('home/product',function(){
+    return "This is product - home";
+})->name('home.product');
+
+Route::group([
+    'prefix' => 'admin',
+    'as' => 'admin.'
+],function(){
+    Route::get('product',function(){
+        return "This product - admin";
+    })->name('product');
+
+    Route::get('user',function(){
+        return "This user - admin";
+    })->name('user');
+});
+
+// lam viec voi controller
+Route::get('demo-controller/{name}/{age?}','TestController@demo');
+Route::get('demo/{name}/{age?}','TestController@hello');
+Route::get('load-view','TestController@loadview')->name('student');
+Route::get('demo-product','TestController@product')->name('mypd');
+
 
