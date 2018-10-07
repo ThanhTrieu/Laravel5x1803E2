@@ -103,4 +103,11 @@ Route::get('demo/{name}/{age?}','TestController@hello');
 Route::get('load-view','TestController@loadview')->name('student');
 Route::get('demo-product','TestController@product')->name('mypd');
 
+Route::group([
+    'prefix' => 'db'
+], function(){
+    Route::get('all-data/{tablename}','QueryDataController@selectData');
+    Route::get('delete-data/{tablename}/{id}','QueryDataController@deleteData');
+});
+
 
