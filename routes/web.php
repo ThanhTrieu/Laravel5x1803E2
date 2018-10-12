@@ -95,6 +95,9 @@ Route::group([
     Route::get('user',function(){
         return "This user - admin";
     })->name('user');
+
+    Route::get('/','Admin\LoginController@showForm');
+    Route::post('login','Admin\LoginController@handle')->name('showForm');
 });
 
 // lam viec voi controller
@@ -108,6 +111,12 @@ Route::group([
 ], function(){
     Route::get('all-data/{tablename}','QueryDataController@selectData');
     Route::get('delete-data/{tablename}/{id}','QueryDataController@deleteData');
+});
+
+Route::group([
+    'prefix' => 'orm'
+], function(){
+    Route::get('product','EloquentDataController@test');
 });
 
 
