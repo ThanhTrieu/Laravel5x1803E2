@@ -84,22 +84,6 @@ route::get('home/product',function(){
     return "This is product - home";
 })->name('home.product');
 
-Route::group([
-    'prefix' => 'admin',
-    'as' => 'admin.'
-],function(){
-    Route::get('product',function(){
-        return "This product - admin";
-    })->name('product');
-
-    Route::get('user',function(){
-        return "This user - admin";
-    })->name('user');
-
-    Route::get('/','Admin\LoginController@showForm');
-    Route::post('login','Admin\LoginController@handle')->name('showForm');
-});
-
 // lam viec voi controller
 Route::get('demo-controller/{name}/{age?}','TestController@demo');
 Route::get('demo/{name}/{age?}','TestController@hello');
@@ -117,6 +101,27 @@ Route::group([
     'prefix' => 'orm'
 ], function(){
     Route::get('product','EloquentDataController@test');
+});
+
+
+/******************** ADMIN ****************************/
+Route::group([
+    'prefix' => 'admin',
+    'as' => 'admin.',
+    'namespace' => 'Admin'
+],function(){
+    Route::get('/','LoginController@showForm')->name('formLogin');
+    Route::post('login','LoginController@handle')->name('showForm');
+    Route::post('logout','LoginController@logout')->name('logout');
+});
+
+Route::group([.  
+    'prefix' => 'admin',
+    'as' => 'admin.',
+    'namespace' => 'Admin',
+    'middleware' => ['web','checkAdminLogined']
+],function(){
+    Route::get('dashboard','DashboardController@index')->name('dashboard');
 });
 
 

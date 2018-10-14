@@ -9,6 +9,18 @@ class Admin extends Model
     // model nay no se lam viec cho bang du lieu nao ?
     protected $table = 'admins';
 
+    public function checkAdminLogin($user, $pass)
+    {
+        $data = Admin::select('*')
+                    ->where(['username'=>$user,'password' =>$pass])
+                    ->first();
+
+        if(is_object($data) && $data !== null){
+            $data = $data->toArray();
+        }
+        return $data;
+    }
+
     public function myInsert($user, $pass, $role, $status, $email, $phone, $add)
     {
     	$admin = new Admin;

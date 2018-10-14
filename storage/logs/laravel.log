@@ -1612,3 +1612,143 @@
 #55 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/server.php(21): require_once('/Users/nguyenth...')
 #56 {main}
 "} 
+[2018-10-14 20:04:46] local.ERROR: App\Http\Controllers\Admin\DashboardController::index(): Failed opening required '&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+  &lt;head&gt;
+
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;&quot;&gt;
+
+    &lt;title&gt;SB Admin - Dashboard&lt;/title&gt;
+
+    &lt;!-- Bootstrap core CSS--&gt;
+    &lt;link href=&quot;http://localhost:8000/css/admin/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;!-- Custom fonts for this template--&gt;
+    &lt;link href=&quot;http://localhost:8000/css/admin/all.min.css&quot; type=&quot;text/css&quot;&gt;
+
+    &lt;!-- Custom styles for this template--&gt;
+    &lt;link href=&quot;http://localhost:8000/css/admin/sb-admin.min.css&quot; rel=&quot;s {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): App\\Http\\Controllers\\Admin\\DashboardController::index(): Failed opening required '&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+  &lt;head&gt;
+
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;&quot;&gt;
+
+    &lt;title&gt;SB Admin - Dashboard&lt;/title&gt;
+
+    &lt;!-- Bootstrap core CSS--&gt;
+    &lt;link href=&quot;http://localhost:8000/css/admin/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;!-- Custom fonts for this template--&gt;
+    &lt;link href=&quot;http://localhost:8000/css/admin/all.min.css&quot; type=&quot;text/css&quot;&gt;
+
+    &lt;!-- Custom styles for this template--&gt;
+    &lt;link href=&quot;http://localhost:8000/css/admin/sb-admin.min.css&quot; rel=&quot;s at /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/app/Http/Controllers/Admin/DashboardController.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2018-10-14 20:04:50] local.ERROR: App\Http\Controllers\Admin\DashboardController::index(): Failed opening required '&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+  &lt;head&gt;
+
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;&quot;&gt;
+
+    &lt;title&gt;SB Admin - Dashboard&lt;/title&gt;
+
+    &lt;!-- Bootstrap core CSS--&gt;
+    &lt;link href=&quot;http://localhost:8000/css/admin/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;!-- Custom fonts for this template--&gt;
+    &lt;link href=&quot;http://localhost:8000/css/admin/all.min.css&quot; type=&quot;text/css&quot;&gt;
+
+    &lt;!-- Custom styles for this template--&gt;
+    &lt;link href=&quot;http://localhost:8000/css/admin/sb-admin.min.css&quot; rel=&quot;s {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): App\\Http\\Controllers\\Admin\\DashboardController::index(): Failed opening required '&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+  &lt;head&gt;
+
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;&quot;&gt;
+
+    &lt;title&gt;SB Admin - Dashboard&lt;/title&gt;
+
+    &lt;!-- Bootstrap core CSS--&gt;
+    &lt;link href=&quot;http://localhost:8000/css/admin/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;!-- Custom fonts for this template--&gt;
+    &lt;link href=&quot;http://localhost:8000/css/admin/all.min.css&quot; type=&quot;text/css&quot;&gt;
+
+    &lt;!-- Custom styles for this template--&gt;
+    &lt;link href=&quot;http://localhost:8000/css/admin/sb-admin.min.css&quot; rel=&quot;s at /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/app/Http/Controllers/Admin/DashboardController.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2018-10-14 20:57:17] local.ERROR: Class 'App\Http\Middleware\Session' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Http\\Middleware\\Session' not found at /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/app/Http/Middleware/AdminLogined.php:31)
+[stacktrace]
+#0 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/app/Http/Middleware/AdminLogined.php(20): App\\Http\\Middleware\\AdminLogined->checkAdminLogined()
+#1 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): App\\Http\\Middleware\\AdminLogined->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#2 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#3 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#4 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#5 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#6 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#7 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#10 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Router.php(681): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#23 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Router.php(656): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#24 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Router.php(622): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#25 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Router.php(611): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#26 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#27 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#28 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#46 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#47 /Users/nguyenthanhtrieu/Desktop/Laravel/Laravel5x/server.php(21): require_once('/Users/nguyenth...')
+#48 {main}
+"} 
