@@ -115,13 +115,18 @@ Route::group([
     Route::post('logout','LoginController@logout')->name('logout');
 });
 
-Route::group([.  
+Route::group([  
     'prefix' => 'admin',
     'as' => 'admin.',
     'namespace' => 'Admin',
     'middleware' => ['web','checkAdminLogined']
 ],function(){
     Route::get('dashboard','DashboardController@index')->name('dashboard');
+
+    Route::get('manufacture','ManufactureController@index')->name('manufacture');
+    Route::get('add-manufacture','ManufactureController@addForm')->name('formAddManu');
+    Route::post('handle-add','ManufactureController@handleAdd')->name('handleAddManu');
+    Route::post('delete-manu','ManufactureController@deleteManu')->name('deleteManu');
 });
 
 
