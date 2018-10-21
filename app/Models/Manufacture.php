@@ -13,6 +13,28 @@ class Manufacture extends Model
     	return $this->hasMany('App\Models\Product','id');
     }
 
+    public function updateManuById($id, $name, $add)
+    {
+        $manu = Manufacture::find($id);
+        $manu->name = $name;
+        $manu->address = $add;
+        $manu->updated_at = date('Y-m-d H:i:s');
+
+        if($manu->save()){
+            return true;
+        }
+        return false;
+    }
+
+    public function getInfoDataManuById($id)
+    {
+        $info = Manufacture::find($id);
+        if(is_object($info) && $info !== null){
+            $info->toArray();
+        }
+        return $info;
+    }
+
     public function deleteManuById($id)
     {
         if(Manufacture::where('id',$id)->delete()){
@@ -21,9 +43,10 @@ class Manufacture extends Model
         return false;
     }
 
-    public function getAllDataManufacture()
+    public function getAllDataManufacture($keyword,$limit = 2)
     {
-        $data = Manufacture::all();
+        $data = Manufacture::where('name','LIKE','%'.$keyword.'%')
+                           ->paginate($limit);
         if(is_object($data) && $data !== null){
             $data->toArray();
         }

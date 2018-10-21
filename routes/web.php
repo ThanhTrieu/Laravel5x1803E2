@@ -127,6 +127,8 @@ Route::group([
     Route::get('add-manufacture','ManufactureController@addForm')->name('formAddManu');
     Route::post('handle-add','ManufactureController@handleAdd')->name('handleAddManu');
     Route::post('delete-manu','ManufactureController@deleteManu')->name('deleteManu');
+    Route::get('edit-manu/{id}','ManufactureController@edit')->name('editManu');
+    Route::post('handle-edit','ManufactureController@handleEdit')->name('handleEditManu');
 });
 
 

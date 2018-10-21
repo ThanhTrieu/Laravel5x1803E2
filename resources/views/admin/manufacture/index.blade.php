@@ -4,7 +4,15 @@
 <div class="row">
   <div class="col-md-12 col-lg-12">
     <h2 class="text-center">This is Manufacture</h2>
-    <a href="{{ route('admin.formAddManu') }}" title="Add manufacture" class="btn btn-primary"> Add + </a>
+	<div class="row">
+		<div class="col-md-8 col-lg-8">
+			<a href="{{ route('admin.formAddManu') }}" title="Add manufacture" class="btn btn-primary"> Add + </a>
+		</div>
+	    <div class="col-md-4 col-lg-4">
+	    	<input type="text" name="txtKeyword" id="txtKeyword" value="{{ $key }}">
+	    	<button id="btnSearch" type="button" class="btn btn-primary"> Search</button>
+	    </div>
+	</div>
     <hr>
     <table class="table table-bordered table-striped table-hover">
     	<thead>
@@ -22,7 +30,7 @@
 	    			<td>{{ $item['name'] }}</td>
 	    			<td>{{ $item['address'] }}</td>
 	    			<td>
-	    				<a class="btn btn-info" href="#" title="Edit">Edit</a>
+	    				<a class="btn btn-info" href="{{ route('admin.editManu',['id'=>$item['id']]) }}" title="Edit">Edit</a>
 	    			</td>
 	    			<td>
 	    				<button onclick="deleteManu({{ $item['id'] }});" type="button" class="btn btn-danger">Delete</button>
@@ -31,6 +39,9 @@
     		@endforeach
     	</tbody>
     </table>
+
+    {{ $data->appends(request()->query())->links() }}
+
   </div>
 </div>
 <script type="text/javascript">
@@ -54,6 +65,18 @@
 			});
 		}
 	}
+
+	$(function(){
+		// bat su kien click vao nut search
+		$('#btnSearch').click(function(){
+			// lay gia tri keyword nhap trong o text
+			let keyword = $('#txtKeyword').val().trim();
+			if(keyword.length){
+				window.location.href = "{{ route('admin.manufacture') }}" + "?keyword=" + keyword;
+			}
+			return false;
+		});
+	});
 </script>
 @endsection
         

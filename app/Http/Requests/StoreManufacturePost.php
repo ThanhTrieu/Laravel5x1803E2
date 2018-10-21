@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Request;
 
 class StoreManufacturePost extends FormRequest
 {
@@ -21,10 +22,13 @@ class StoreManufacturePost extends FormRequest
      *
      * @return array
      */
-    public function rules()
+    public function rules(Request $request)
     {
+        $id = $request->idManu;
+        $id = ($id != null) ? $id : 0;
+        $condition = ($id > 0) ? ',' . $id : '';
         return [
-            'nameManu' => 'required|min:3|unique:manufactures,name',
+            'nameManu' => 'required|min:3|unique:manufactures,name'.$condition,
             'addressManu' => 'required|min:3',
         ];
     }
