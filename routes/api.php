@@ -16,3 +16,5 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+// minh cai route no se chay cho tat ca cam ham nam trong controller
+Route::apiResource('photo','API\PhotoController'); 

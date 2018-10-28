@@ -11,11 +11,17 @@
 |
 */
 
-/**************** User - Frontend *****************/
+Route::get('test-api',function(){
+    return "AAAA";
+});
 
+/**************** User - Frontend *****************/
+// them multi lang
 Route::group([
+    'prefix' => LaravelLocalization::setLocale(),
     'as' => 'frontend.',
-    'namespace' =>'Frontend'
+    'namespace' =>'Frontend',
+    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
 ],function(){
     Route::get('/','HomeController@index')->name('home.index');
     Route::get('add-cart/{id}','CartController@addCart')->name('addCart');
@@ -24,6 +30,26 @@ Route::group([
 
     Route::get('update-cart/{id?}/{qty?}','CartController@updateCart')->name('updatecart');
 });
+
+
+/******* change language ********/
+Route::get('change-language/{lang?}',function($lang = null){
+    $lang = ($lang == null) ? 'en' : $lang;
+    // set language cho toan bo ung dung - cho website
+    App::setLocale($lang);
+    // set language vao session - de co the lam viec o nhung page khac nhau - phien lam viec khac nhau
+    Session::put('locale',$lang);
+
+    // su dung thu vien cua laravel (LaravelLocalization) de set lai language
+    LaravelLocalization::setLocale($lang);
+
+    // dieu huong url
+    $url = LaravelLocalization::getLocalizedURL(App::getLocale(), \URL::previous());
+
+    return Redirect::to($url);
+
+
+})->name('changelang');
 
 
 /******************** ADMIN ****************************/
@@ -54,3 +80,7 @@ Route::group([
 });
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
